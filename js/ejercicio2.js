@@ -12,14 +12,16 @@ function getCompromisedFiles(lastSafeDownload, droneLogs) {
     }
   }
 
-  ids.sort(function(a, b) {
+  ids.sort(function (a, b) {
     return a - b;
   });
 
   return ids;
 }
 
-let lastSafeDownload = prompt("Ingrese el timestamp de la última descarga segura:");
+let lastSafeDownload = prompt(
+  "Ingrese el timestamp de la última descarga segura:"
+);
 
 let cantidad = prompt("¿Cuántos registros de modificaciones desea ingresar?");
 
@@ -27,7 +29,9 @@ let droneLogs = [];
 
 for (let i = 0; i < cantidad; i++) {
   let id = prompt("Ingrese el ID del archivo #" + (i + 1) + ":");
-  let time = prompt("Ingrese el timestamp de la modificación #" + (i + 1) + ":");
+  let time = prompt(
+    "Ingrese el timestamp de la modificación #" + (i + 1) + ":"
+  );
   droneLogs.push([id, time]);
 }
 
