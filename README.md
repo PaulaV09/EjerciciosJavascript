@@ -1,4 +1,5 @@
 # 📘 Ejercicios de Lógica en JavaScript
+### Paula Andrea Viviescas Jaimes
 
 Este proyecto contiene una serie de retos de programación resueltos en **JavaScript**, enfocados en el uso de estructuras básicas como arreglos, cadenas, pilas, sets y objetos.
 
