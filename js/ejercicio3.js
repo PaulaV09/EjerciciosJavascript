@@ -30,16 +30,14 @@ function detectarPlagio(base, frasesEstudiante) {
   return resultado;
 }
 
-let cantidadBase = parseInt(
-  prompt("¿Cuántas frases hay en la base sospechosa?")
-);
+let cantidadBase = prompt("¿Cuántas frases hay en la base sospechosa?");
 let base = [];
 for (let i = 0; i < cantidadBase; i++) {
   let frase = prompt("Ingrese la frase sospechosa #" + (i + 1) + ":");
   base.push(frase);
 }
 
-let cantidadEst = parseInt(prompt("¿Cuántas frases escribió el estudiante?"));
+let cantidadEst = prompt("¿Cuántas frases escribió el estudiante?");
 let frasesEstudiante = [];
 for (let j = 0; j < cantidadEst; j++) {
   let frase = prompt("Ingrese la frase del estudiante #" + (j + 1) + ":");
